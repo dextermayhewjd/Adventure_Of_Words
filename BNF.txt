@@ -1,0 +1,28 @@
+<Command>        ::=  <CommandType> ";"
+
+<CommandType>    ::=  <get> | <drop> | <inv> | <goto> | <look> | <reset>
+
+<get>           ::=  "get " <ArtefactName>
+
+<drop>          ::= "drop " <ArtefactName>
+
+<inv>           ::=  "inv"
+
+<goto>          ::=  "goto " <LocationName>
+
+<look>           ::=  "look "
+
+<reset>          ::=  "reset"
+
+<PerformAction>  ::= <TriggerName> <ArtefactName> | <TriggerName> <FurnitureName> | <TriggerName> <CharacterName>| <TriggerName> <CharacterName>
+
+<TriggerName>    ::=  "open" | "unlock" | "chop" | "cut" | "cutdown" | "drink" | "fight" | "hit" | "attack" | "pay" | "bridge" | "dig" | "blow"
+
+<LocationName>   ::=  "storeroom" | "cellar" | "cabin" | "forest" | "clearing" | "riverbank"
+
+<FurnitureName>  ::= "hole" |"trapdoor" |"ground" |"tree" |"river" |
+
+<CharacterName>  ::=  "elf"
+
+<ArtefactName>   ::=  "gold" | "shovel" | "coin" | "log" | "axe" | "potion" | "key" | "horn"
+
